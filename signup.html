@@ -32,7 +32,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url(&#39;assets/images/bg-01.jpg&#39;);">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method=post>
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
@@ -42,12 +42,12 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter username">
-						<input class="input100" type="text" name="username" placeholder="Email ">
+						<input class="input100" type="text" id="username" name="username" placeholder="Email ">
 						<span class="focus-input100" data-placeholder=""></span>
 					</div>
 
 					<div class="wrap-input100 validate-input alert-validate" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" id="pass" name="pass" placeholder="Password">
 						<span class="focus-input100" data-placeholder=""></span>
 					</div>
 
@@ -98,7 +98,15 @@
 </body>
 <script>
     function goto_login(){
-        window.location='login.html';
+    //     console.log($('#username').val());
+    //     console.log($('#pass').val());
+    //    if($('#username').val() != "" && $('#pass').val()!="")
+    //    {
+            window.location= './login.html';
+            console.log("ok");
+    //    }    
+    //    console.log("cancel");
+       
     }
 </script>
 </html>
